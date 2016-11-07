@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.strahinja.popularmovies.Activities.MovieDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_movie_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:paddingBottom="@dimen/activity_movie_details_title_paddingBottom"
+            android:paddingLeft="@dimen/activity_movie_details_title_paddingLeft"
+            android:paddingTop="@dimen/activity_movie_details_title_paddingTop"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity_movie_details_title_textSize"
+            tools:text="Movie Title" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_movie_details_table_marginLeft"
+            android:layout_marginRight="@dimen/activity_movie_details_table_marginRight"
+            android:layout_marginTop="@dimen/activity_movie_details_table_marginTop">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/details_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_movie_details_linearlayout_marginLeft"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_movie_details_release"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_movie_details_textview_marginBottom"
+                        android:textSize="@dimen/activity_movie_details_textviewYear_textSize"
+                        tools:text="2015" />
+
+                    <TextView
+                        android:id="@+id/activity_movie_details_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_movie_details_textview_marginBottom"
+                        android:textSize="@dimen/activity_movie_details_textviewRating_textSize"
+                        android:textStyle="italic"
+                        tools:text="9.1/10" />
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/activity_movie_details_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_movie_details_synopsis_marginLeft"
+            android:layout_marginRight="@dimen/activity_movie_details_synopsis_marginRight"
+            android:layout_marginTop="@dimen/activity_movie_details_synopsis_marginTop"
+            tools:text="Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies." />
+
+    </LinearLayout>
+</ScrollView>
